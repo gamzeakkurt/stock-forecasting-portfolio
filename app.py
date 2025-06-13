@@ -459,10 +459,10 @@ def arima_forecast(data, days=30):
         forecast_series = forecast_series.clip(lower=last_value * 0.5, upper=last_value * 1.5)
         
         # Debug information
-        st.write(f"ARIMA Model Order: {model.order}")
-        st.write(f"Model AIC: {model.aic():.2f}")
-        st.write(f"Model BIC: {model.bic():.2f}")
-        st.write(f"Forecast Shape: {forecast.shape}")
+        #st.write(f"ARIMA Model Order: {model.order}")
+        #st.write(f"Model AIC: {model.aic():.2f}")
+        #st.write(f"Model BIC: {model.bic():.2f}")
+        #st.write(f"Forecast Shape: {forecast.shape}")
         
         # Format and display forecast results
         forecast_df = pd.DataFrame({
